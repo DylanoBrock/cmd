@@ -1,0 +1,112 @@
+1. **sudo apt update**: Vernieuwt de pakketinformatie van de beschikbare pakketten.
+2. **sudo apt install net-tools**: Installeert het net-tools pakket, waaronder `ifconfig` en `netstat`.
+3. **ifconfig**: Toont de netwerkconfiguratie van de actieve interfaces.
+4. **netstat -na**: Toont netwerkstatistieken, inclusief luisterende poorten.
+5. **sudo apt reinstall net-tools**: Herinstalleert het net-tools pakket.
+6. **sudo apt purge net-tools**: Verwijdert het net-tools pakket, inclusief configuratiebestanden.
+7. **sudo apt upgrade**: Werkt alle geïnstalleerde pakketten bij naar de nieuwste versie.
+8. **sudo apt clean**: Verwijdert gedownloade installatiebestanden van gedeïnstalleerde pakketten.
+9. **sudo apt autoremove net-tools**: Verwijdert automatisch ongebruikte afhankelijkheden, inclusief net-tools.
+10. **sudo apt-cache show ^net-tools$**: Toont informatie over het net-tools pakket.
+11. **sudo dpkg -i steam_latest.deb**: Installeert het Steam-pakket met behulp van het dpkg-systeem.
+12. **sudo dpkg -l "net\*"**: Toont geïnstalleerde pakketten die beginnen met "net".
+13. **sudo dpkg -s screen**: Toont statusinformatie van het geïnstalleerde 'screen'-pakket.
+
+### Mappen:
+
+1. **pwd**: Toont het huidige werkdirectory.
+2. **ls**: Lijst de inhoud van het huidige directory op.
+3. **ls -a**: Lijst alle bestanden, inclusief verborgen bestanden.
+4. **ls -l**: Lijst gedetailleerde informatie over bestanden en mappen op.
+5. **ls -h**: Lijst bestanden op met menselijk leesbare bestandsgroottes.
+6. **ls -al**: Toont alle bestanden en mappen met gedetailleerde informatie, inclusief verborgen bestanden.
+7. **ls -alh**: Toont alle bestanden en mappen met gedetailleerde informatie en menselijk leesbare bestandsgroottes.
+8. **cd ~**: Gaat naar de home directory.
+9. **mkdir Projecten**: Maakt een nieuwe map met de naam "Projecten".
+10. **cd Projecten**: Gaat naar de "Projecten"-map.
+11. **mkdir Onnodig**: Maakt een nieuwe map met de naam "Onnodig".
+12. **rmdir Onnodig**: Verwijdert de map "Onnodig" (moet leeg zijn).
+13. **cd /**: Gaat naar de root directory.
+14. **cd /home**: Gaat naar de home directory.
+15. **cd ~**: Gaat naar de home directory.
+16. **cd ..**: Gaat één niveau omhoog in de directorystructuur.
+17. **cd -**: Gaat naar het vorige werkdirectory.
+
+### Bestanden:
+
+1. **pwd**: Toont het huidige werkdirectory.
+2. **ls -al**: Lijst alle bestanden en mappen op met gedetailleerde informatie.
+3. **cd ~**: Gaat naar de home directory.
+4. **mkdir Scripts**: Maakt een nieuwe map met de naam "Scripts".
+5. **cd Scripts**: Gaat naar de "Scripts"-map.
+6. **touch bash.sh**: Creëert een nieuw leeg bestand met de naam "bash.sh".
+7. **nano bash.sh**: Opent het "bash.sh" bestand voor bewerking in de nano-editor.
+8. **cp bash.sh bash.sh.backup**: Kopieert het bestand "bash.sh" naar "bash.sh.backup".
+9. **mv bash.sh.backup bash.sh.backup.yesterday**: Hernoemt het bestand "bash.sh.backup" naar "bash.sh.backup.yesterday".
+10. **rm -f bash.sh.backup.yesterday**: Verwijdert het bestand "bash.sh.backup.yesterday".
+11. **chmod +x bash.sh**: Geeft uitvoeringsrechten aan het bestand "bash.sh".
+
+### Tekstbestanden:
+
+1. **cd ~**: Gaat naar de home directory.
+2. **touch README**: Creëert een nieuw leeg tekstbestand met de naam "README".
+3. **echo "Mijn readme document" > README**: Voegt de tekst "Mijn readme document" toe aan het bestand "README".
+4. **cat README**: Toont de inhoud van het "README" bestand.
+5. **echo "Regel 2" >> README**: Voegt de tekst "Regel 2" toe aan het einde van het "README" bestand.
+6. **nano README**: Opent het "README" bestand voor bewerking in de nano-editor.
+7. **tail -f /var/log/syslog**: Toont de laatste regels van het systeemlogboek en blijft deze volgen.
+8. **grep "readme" README**: Zoekt naar de tekst "readme" in het bestand "README".
+9. **echo "Eerste Regel" > README**: Overschrijft de inhoud van het "README" bestand met "Eerste Regel".
+10. **less /var/log/syslog**: Toont het systeemlogboek met bladermogelijkheden.
+11. **more /var/log/syslog**: Toont het systeemlogboek, bladert scherm voor scherm.
+
+### Gebruikers en groepen:
+
+1. **sudo useradd -m -s /bin/bash johndoe**: Voegt een nieuwe gebruiker "johndoe" toe met de standaardshell "/bin/bash".
+2. **sudo userdel -r johndoe**: Verwijdert de gebruiker "johndoe" inclusief de home directory.
+3. **sudo groupadd developers**: Maakt een nieuwe groep met de naam "developers".
+4. **tail /etc/group**: Toont de inhoud van het "/etc/group" bestand.
+5. **sudo usermod -aG developers johndoe**: Voegt de gebruiker "johndoe" toe aan de groep "developers".
+6. **sudo groupdel -f developers**: Verwijdert de groep "developers" (forceer verwijdering).
+7. **cat /etc/passwd**: Toont de inhoud van het "/etc/passwd" bestand.
+
+### Datum en tijd:
+
+1. **date**: Toont de huidige datum en tijd.
+2. **timedatectl status**: Toont de status van de systeem
+
+Excuseer voor het ongemak. Het lijkt erop dat het bericht is afgekapt. Hier is de voortzetting en aanvulling:
+
+### Datum en tijd (vervolg):
+
+3. **sudo timedatectl set-timezone Europe/Amsterdam**: Stelt de tijdzone in op "Europe/Amsterdam" met behulp van timedatectl.
+
+### Bash:
+
+1. **sudo apt update**: Vernieuwt de pakketinformatie van de beschikbare pakketten.
+2. **sudo apt install net-tools**: Installeert het net-tools pakket, waaronder `ifconfig`.
+
+### Zoeken:
+
+1. **find /etc/passwd -name "passwd"**: Zoekt naar het bestand "passwd" in de "/etc" directory.
+2. **find / -name "pas*"**: Zoekt naar bestanden of mappen met namen beginnend met "pas" in het hele bestandssysteem.
+3. **find /etc -size +1024k**: Zoekt naar bestanden groter dan 1024 kilobytes in de "/etc" directory.
+4. **find / -perm 777**: Zoekt naar bestanden met de rechten 777 in het hele bestandssysteem.
+5. **grep /etc "*.conf"**: Zoekt naar bestanden met de extensie ".conf" in de "/etc" directory.
+
+### Processen:
+
+1. **ps aux**: Toont een lijst van alle actieve processen.
+2. **ps uax | more**: Toont een paginagrote lijst van alle actieve processen.
+3. **ps fax**: Toont een boomstructuur van alle actieve processen.
+4. **pkill -KILL bash**: Beëindigt alle processen met de naam "bash".
+
+### Permissions:
+
+1. **sudo apt update**: Vernieuwt de pakketinformatie van de beschikbare pakketten.
+2. **sudo apt install net-tools**: Installeert het net-tools pakket, waaronder `ifconfig`.
+
+### Pipes:
+
+1. **sudo apt update**: Vernieuwt de pakketinformatie van de beschikbare pakketten.
+2. **sudo apt install net-tools**: Installeert het net-tools pakket, waaronder `ifconfig`.
